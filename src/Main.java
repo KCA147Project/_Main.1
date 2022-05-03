@@ -23,8 +23,10 @@ public class Main {
 
         String number;
 
+
 //_____________________________________________________________________________________________________________________
         //ARRAY HEADER CLASS
+
 
         ArrayList<String> tableHeader = new ArrayList();
         tableHeader.add("ITEM"); //0
@@ -33,6 +35,40 @@ public class Main {
         tableHeader.add("TOTAL"); //3
 
 
+//_____________________________________________________________________________________________________________________
+        //ARRAY ITEM NAME CLASS
+
+        ArrayList<String> itemList = new ArrayList();
+        itemList.add("electricLawnMower"); //0
+        itemList.add("iPhone"); //1
+        itemList.add("dinoSkull"); //2
+        itemList.add("gameConsole"); //3
+        itemList.add("automaticWatch"); //4
+        itemList.add ("Laptop"); //5
+        itemList.add("airPodmax"); //6
+        itemList.add("smartTv"); //7
+        itemList.add("toolSet"); //8
+        itemList.add("tablet"); //9
+        itemList.add("webcam"); //10
+        itemList.add("securityCamera"); //11
+        itemList.add("binoculars"); //12
+        itemList.add("baseballCards"); //13
+        itemList.add("typeWriter"); //14
+        itemList.add("waterBottle"); //15
+        itemList.add("projector"); //16
+        itemList.add("jacket"); //17
+        itemList.add("yeezyShoes"); //18
+        itemList.add("videoGame"); //19
+        itemList.add("backpack"); //20
+        itemList.add("toothbrush"); //21
+        itemList.add("toothPaste"); //22
+        itemList.add("dogFood"); //23
+        itemList.add("toolBox"); //24
+        itemList.add("mechanicalPencils"); //25
+        itemList.add("iphoneCharger"); //26
+        itemList.add("alarmClock"); //27
+        itemList.add("teslaModel3"); //28
+        itemList.add("electricSkateboard"); //29
 
 //_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
