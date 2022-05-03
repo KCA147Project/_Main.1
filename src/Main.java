@@ -1,10 +1,12 @@
-import java.time.format.*;
-import java.util.*;
 import java.text.*;
 import java.time.*;
+import java.time.format.*;
+import java.util.*;
 
 
 public class Main {
+
+
 
     public static void main(String[] args) {
 
@@ -13,8 +15,6 @@ public class Main {
 
 //_____________________________________________________________________________________________________________________
         //WORKER ID CLASS
-
-
 
 
 
@@ -72,7 +72,7 @@ public class Main {
 
 //_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
-        double Maryland = 0.06;
+        double Maryland= 0.06;
         int numberPurchase;
         byte numberQuantity, employeeId;
         double subtotal, tax, totalCost;
@@ -87,7 +87,8 @@ public class Main {
 
         //NAME (QUESTION)
         Scanner input = new Scanner(System.in);
-        System.out.print("\nWhat state are you from?: ");
+
+        System.out.print("\nWhat state are you from?(Enter Abreviation. e.g. CA): ");
         String value = input.nextLine();
 
         //EMPLOYEE ID
@@ -111,7 +112,7 @@ public class Main {
         //OUTPUT
         System.out.println ("\n**************************************");
 
-        System.out.println("Atkinson Shields Stein & Partners");
+        System.out.println("Atkinson Shields Stine & Partners");
         System.out.println("Store # 09254");
         System.out.println("1000 Hilltop Cir,\nBaltimore, MD 21250" + " (410) 455-1000");
         System.out.println(dtf.format(now) /*+ employeeId*/);
