@@ -239,7 +239,7 @@ public class Main {
         System.out.println(dtf.format(now) +" | " + "EMPLOYEE ID: 223296" /*+ create employeeId*/);
         //System.out.println("\n");
 
-        System.out.println ("\nState: " + value); //STATE
+        System.out.println ("\nState: " + value.toUpperCase()); //STATE
         System.out.printf ("State Tax: " + "%.2f%%\n", Maryland); //STATE TAX
 
         System.out.println ("\n" + line);
