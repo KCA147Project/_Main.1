@@ -14,11 +14,6 @@ public class Main {
         LocalDateTime now = LocalDateTime.now();
 
 //_____________________________________________________________________________________________________________________
-        //WORKER ID CLASS
-
-
-
-//_____________________________________________________________________________________________________________________
         //ADDRESS CLASS
 
         String number;
@@ -39,36 +34,76 @@ public class Main {
         //ARRAY ITEM NAME CLASS
 
         ArrayList<String> itemList = new ArrayList();
-        itemList.add("electricLawnMower"); //0
-        itemList.add("iPhone"); //1
-        itemList.add("dinoSkull"); //2
-        itemList.add("gameConsole"); //3
-        itemList.add("automaticWatch"); //4
-        itemList.add ("Laptop"); //5
-        itemList.add("airPodmax"); //6
-        itemList.add("smartTv"); //7
-        itemList.add("toolSet"); //8
-        itemList.add("tablet"); //9
-        itemList.add("webcam"); //10
-        itemList.add("securityCamera"); //11
-        itemList.add("binoculars"); //12
-        itemList.add("baseballCards"); //13
-        itemList.add("typeWriter"); //14
-        itemList.add("waterBottle"); //15
-        itemList.add("projector"); //16
-        itemList.add("jacket"); //17
-        itemList.add("yeezyShoes"); //18
-        itemList.add("videoGame"); //19
-        itemList.add("backpack"); //20
-        itemList.add("toothbrush"); //21
-        itemList.add("toothPaste"); //22
-        itemList.add("dogFood"); //23
-        itemList.add("toolBox"); //24
-        itemList.add("mechanicalPencils"); //25
-        itemList.add("iphoneCharger"); //26
-        itemList.add("alarmClock"); //27
-        itemList.add("teslaModel3"); //28
-        itemList.add("electricSkateboard"); //29
+        itemList.add("EGO 56-volt Select Cut"); //0
+        itemList.add("iPhone 13 Pro Max (1TB)"); //1
+        itemList.add("T-Rex Skull"); //2
+        itemList.add("Playstation V"); //3
+        itemList.add("TAG Heuer Monaco Calibre 11"); //4
+        itemList.add ("MacBook Pro 16-inch"); //5
+        itemList.add("Airpods Max"); //6
+        itemList.add("Samsung 65-inch 4K Smart TV"); //7
+        itemList.add("Milwaukee Brushless Combo"); //8
+        itemList.add("iPad Pro 12.9-inch (2TB)"); //9
+        itemList.add("NexiGo Webcam"); //10
+        itemList.add("Blurams Security Camera"); //11
+        itemList.add("Occer 12x25 Compact Binoculars"); //12
+        itemList.add("TOPS Opening Day Baseball Value Pack"); //13
+        itemList.add("Retro Typewriter Keyboard 7 Keys"); //14
+        itemList.add("Hydro Flask"); //15
+        itemList.add("Auking Mini Projector"); //16
+        itemList.add("Nike Tech Jacket"); //17
+        itemList.add("Yeezy Boost 350v2 Bred"); //18
+        itemList.add("Elden Ring"); //19
+        itemList.add("Comfort Carry Portable Locker Pack, 42L"); //20
+        itemList.add("AquaSonic Black Series"); //21
+        itemList.add("Crest Pro-Health"); //22
+        itemList.add("Blue Buffalo Life Protection"); //23
+        itemList.add("WEWLINE 17-inch Toolbox"); //24
+        itemList.add("BIC Xtra-Smooth Mechanical Pencils"); //25
+        itemList.add("3 Pack Chargers (AppleMFi Certified)"); //26
+        itemList.add("Amazon Basics Small Digital Alarm Clock"); //27
+        itemList.add("Tesla Model 3 Performance"); //28
+        itemList.add("Meepo V3 Electric Skateboard"); //29
+
+//_____________________________________________________________________________________________________________________
+        //ARRAY ITEM PRICE CLASS
+
+        //ArrayList<String>itemPrice = new ArrayList();
+        double itemPrice[];
+
+        itemPrice = new double [30];
+
+        itemPrice[0]=799.00;
+        itemPrice[1]=1599.00;
+        itemPrice[2]=547.80;
+        itemPrice[3]=499.00;
+        itemPrice[4]=5715.00;
+        itemPrice[5]=6099.00;
+        itemPrice[6]=549.00;
+        itemPrice[7]=529.00;
+        itemPrice[8]=1699.00;
+        itemPrice[9]=2399.00;
+        itemPrice[10]=39.99;
+        itemPrice[11]=40.98;
+        itemPrice[12]=35.99;
+        itemPrice[13]=39.97;
+        itemPrice[14]=138.99;
+        itemPrice[15]=35.95;
+        itemPrice[16]=89.99;
+        itemPrice[17]=121.63;
+        itemPrice[18]=412.00;
+        itemPrice[19]=59.99;
+        itemPrice[20]=99.00;
+        itemPrice[21]=39.95;
+        itemPrice[22]=5.99;
+        itemPrice[23]=55.98;
+        itemPrice[24]=32.39;
+        itemPrice[25]=13.80;
+        itemPrice[26]=21.99;
+        itemPrice[27]=10.34;
+        itemPrice[28]=76990.00;
+        itemPrice[29]=599.00;
+
 
 //_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
@@ -88,7 +123,7 @@ public class Main {
         //NAME (QUESTION)
         Scanner input = new Scanner(System.in);
 
-        System.out.print("\nWhat state are you from?(Enter Abreviation. e.g. CA): ");
+        System.out.print("\nWhat state are you from? (Abbreviate e.g. CA): ");
         String value = input.nextLine();
 
         //EMPLOYEE ID
@@ -121,7 +156,7 @@ public class Main {
         System.out.println ("\nState: " + value); //STATE
         System.out.printf ("State Tax: " + "%.2f%%\n", Maryland); //STATE TAX
         System.out.println("\n" + tableHeader.get(0) + " | " + tableHeader.get(1) + " | " + tableHeader.get(2)+ " | " + tableHeader.get(3));
-        System.out.println("____" +  "   " + "___" +  "   " + "____" +  "  " + "____");
+        System.out.println("____" +  "   " + "___" +  "   " + "_____" +  "   " + "_____");
 
 
 
@@ -137,6 +172,12 @@ public class Main {
         System.out.println ("Total:             " + fmt1.format (totalCost)); //NET PAY
 
         System.out.println ("**************************************");
+
+        System.out.println(itemList.get(0) + "       " + fmt1.format(itemPrice[0]));
+        System.out.println(itemList.get(18) + "       " + fmt1.format(itemPrice[18]));
+
+
+
 
 
     }
