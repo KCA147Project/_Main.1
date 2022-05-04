@@ -110,9 +110,9 @@ public class Main {
 //_____________________________________________________________________________________________________________________
         //Array INVENTORY CLASS
 
-        double itemInventory[];
+        int itemInventory[];
 
-        itemInventory = new double [30];
+        itemInventory = new int [30];
 
         itemInventory[0]=15;
         itemInventory[1]=30;
@@ -147,11 +147,50 @@ public class Main {
 
 
 //_____________________________________________________________________________________________________________________
+        //Array INVENTORY CLASS
+
+        double wholesalePrice[];
+
+        wholesalePrice = new double [30];
+
+        wholesalePrice[0]=479.40;
+        wholesalePrice[1]=959.40;
+        wholesalePrice[2]=328.68;
+        wholesalePrice[3]=299.40;
+        wholesalePrice[4]=3439.00;
+        wholesalePrice[5]=3659.40;
+        wholesalePrice[6]=329.40;
+        wholesalePrice[7]=317.40;
+        wholesalePrice[8]=1019.40;
+        wholesalePrice[9]=1439.40;
+        wholesalePrice[10]=23.99;
+        wholesalePrice[11]=24.59;
+        wholesalePrice[12]=21.59;
+        wholesalePrice[13]=23.98;
+        wholesalePrice[14]=83.39;
+        wholesalePrice[15]=21.57;
+        wholesalePrice[16]=53.99;
+        wholesalePrice[17]=72.98;
+        wholesalePrice[18]=247.20;
+        wholesalePrice[19]=35.99;
+        wholesalePrice[20]=59.40;
+        wholesalePrice[21]=23.97;
+        wholesalePrice[22]=3.59;
+        wholesalePrice[23]=33.59;
+        wholesalePrice[24]=19.43;
+        wholesalePrice[25]=8.28;
+        wholesalePrice[26]=13.19;
+        wholesalePrice[27]=6.20;
+        wholesalePrice[28]=46194;
+        wholesalePrice[29]=359.40;
+
+
+//_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
         double Maryland= 0.06;
-        int numberPurchase;
+        int numberPurchase, inventoryUpdate;
         byte numberQuantity, employeeId;
-        double subtotal, tax, totalCost;
+        double subtotal, tax, totalCost, inventoryPrice, profit;
 
 
         Scanner scan = new Scanner (System.in);
@@ -183,6 +222,11 @@ public class Main {
         subtotal = numberPurchase * numberQuantity;
         tax = subtotal * Maryland;
         totalCost = subtotal + tax;
+
+        //INVENTORY
+        inventoryUpdate = itemInventory[8] - numberQuantity;
+        inventoryPrice = wholesalePrice[8] * inventoryUpdate;
+        profit = inventoryPrice - wholesalePrice[8];
 
 
 //_____________________________________________________________________________________________________________________
@@ -219,7 +263,12 @@ public class Main {
         System.out.println(itemList.get(0) + "       " + fmt1.format(itemPrice[0]));
         System.out.println(itemList.get(18) + "       " + fmt1.format(itemPrice[18]));
 
-        System.out.println(itemPrice[3] * itemInventory[3]);
+        System.out.println(itemPrice[8] * itemInventory[8]);
+
+        System.out.println ("\n" + line + "\n");
+
+        System.out.println("Current Inventory: " + inventoryUpdate + " at " + fmt1.format(inventoryPrice));
+        System.out.println("Profit: " + profit);
 
 
 
