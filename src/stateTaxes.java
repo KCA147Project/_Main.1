@@ -2,7 +2,7 @@ public class stateTaxes {
 
 
 
-                        // write your code here
+
                         final double AL = 0.04; //Alabama
                         final double AK = 0.00; //Alaska
                         final double AZ = 0.056; //Arizona
