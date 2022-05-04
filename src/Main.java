@@ -4,16 +4,18 @@ import java.time.format.*;
 import java.util.*;
 
 
+
 public class Main {
 
 
 
     public static void main(String[] args) {
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy | HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
 
-        String line = new String(new char[48]).replace('\0', '-');
+        String line = new String(new char[48]).replace('\0', '_');
+        String line2 = new String(new char[48]).replace('\0', '*');
 
 //_____________________________________________________________________________________________________________________
         //ADDRESS CLASS
@@ -147,12 +149,12 @@ public class Main {
 
 //_____________________________________________________________________________________________________________________
         //OUTPUT
-        System.out.println ("\n**************************************");
+        System.out.println ("\n" + line2);
 
-        System.out.println("Atkinson Shields Stine & Partners");
-        System.out.println("Store # 09254");
-        System.out.println("1000 Hilltop Cir,\nBaltimore, MD 21250" + " (410) 455-1000");
-        System.out.println(dtf.format(now) /*+ employeeId*/);
+        System.out.println("              Atkinson Shields \n              Stine & Partners");
+        System.out.println("\n               Store # 094254");
+        System.out.println("       1000 Hilltop Cir ITE Building \n     Baltimore MD 21250" + " (410) 455-1000");
+        System.out.println(dtf.format(now) +" | " + "EMPLOYEE ID: 223296" /*+ create employeeId*/);
         //System.out.println("\n");
 
         System.out.println ("\nState: " + value); //STATE
@@ -160,15 +162,13 @@ public class Main {
 
         System.out.println ("\n" + line);
         System.out.println(tableHeader.get(0) + " | " + tableHeader.get(1) + " | " + tableHeader.get(2)+ " | " + tableHeader.get(3));
-        System.out.println("____" +  "   " + "___" +  "   " + "_____" +  "   " + "_____");
-
-
+        System.out.println("====" +  "   " + "===" +  "   " + "=====" +  "   " + "=====");
 
 
 
         System.out.println ("AMOUNT: " + fmt1.format(numberPurchase)); //HOUR WORKED
 
-        System.out.println ("QUANTITY: " +numberQuantity); //PAY RATE PER HOUR
+        System.out.println ("QUANTITY: " + numberQuantity); //PAY RATE PER HOUR
 
         System.out.println ("Sub Total:         " + fmt1.format (subtotal)); //GROSS PAY
 
