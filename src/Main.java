@@ -13,6 +13,8 @@ public class Main {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
 
+        String line = new String(new char[48]).replace('\0', '-');
+
 //_____________________________________________________________________________________________________________________
         //ADDRESS CLASS
 
@@ -155,13 +157,16 @@ public class Main {
 
         System.out.println ("\nState: " + value); //STATE
         System.out.printf ("State Tax: " + "%.2f%%\n", Maryland); //STATE TAX
-        System.out.println("\n" + tableHeader.get(0) + " | " + tableHeader.get(1) + " | " + tableHeader.get(2)+ " | " + tableHeader.get(3));
+
+        System.out.println ("\n" + line);
+        System.out.println(tableHeader.get(0) + " | " + tableHeader.get(1) + " | " + tableHeader.get(2)+ " | " + tableHeader.get(3));
         System.out.println("____" +  "   " + "___" +  "   " + "_____" +  "   " + "_____");
 
 
 
 
-        System.out.println ("The AMOUNT: " + fmt1.format(numberPurchase)); //HOUR WORKED
+
+        System.out.println ("AMOUNT: " + fmt1.format(numberPurchase)); //HOUR WORKED
 
         System.out.println ("QUANTITY: " +numberQuantity); //PAY RATE PER HOUR
 
@@ -171,7 +176,7 @@ public class Main {
 
         System.out.println ("Total:             " + fmt1.format (totalCost)); //NET PAY
 
-        System.out.println ("**************************************");
+        System.out.println (line);
 
         System.out.println(itemList.get(0) + "       " + fmt1.format(itemPrice[0]));
         System.out.println(itemList.get(18) + "       " + fmt1.format(itemPrice[18]));
