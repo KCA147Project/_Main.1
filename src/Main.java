@@ -161,8 +161,8 @@ public class Main {
         System.out.printf ("State Tax: " + "%.2f%%\n", Maryland); //STATE TAX
 
         System.out.println ("\n" + line);
-        System.out.println(tableHeader.get(0) + " | " + tableHeader.get(1) + " | " + tableHeader.get(2)+ " | " + tableHeader.get(3));
-        System.out.println("====" +  "   " + "===" +  "   " + "=====" +  "   " + "=====");
+        System.out.println(tableHeader.get(0) + "  |  " + tableHeader.get(1) + "  |  " + tableHeader.get(2)+ "  |  " + tableHeader.get(3));
+        System.out.println("====" +  "     " + "===" +  "     " + "=====" +  "     " + "=====");
 
 
 
