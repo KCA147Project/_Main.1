@@ -1,8 +1,9 @@
+/*
 public class itemInventory {
 
-    double itemInventory[];
+    int itemInventory[];
 
-    itemInventory = new double [30];
+    itemInventory = new int [30];
 
     itemInventory[0]=15;
     itemInventory[1]=30;
@@ -35,3 +36,4 @@ public class itemInventory {
     itemInventory[28]=5;
     itemInventory[29]=6;
 }
+*/
