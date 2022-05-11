@@ -149,6 +149,7 @@ public class Main {
 //_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
         double Maryland= 0.06;
+        new stateTaxes();
         int numberPurchase;
         byte numberQuantity, employeeId;
         double subtotal, tax, totalCost;
