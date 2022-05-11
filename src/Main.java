@@ -227,7 +227,8 @@ public class Main {
             System.out.print("What is your QUANTITY?: ");
             numberQuantity = scan.nextByte();
 
-            subtotal = (num1+num2+num3+num4+num5+num6) * numberQuantity;
+            numberPurchase = num1+num2+num3+num4+num5+num6;
+            subtotal = (numberPurchase) * numberQuantity;
             tax = subtotal * Maryland;
             totalCost = subtotal + tax;
 
