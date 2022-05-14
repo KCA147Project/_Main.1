@@ -1,9 +1,9 @@
 /*
-public class itemInventory {
+public class inventoryStock {
 
-    int itemInventory[];
+    double itemInventory[];
 
-    itemInventory = new int [30];
+    itemInventory = new double [30];
 
     itemInventory[0]=15;
     itemInventory[1]=30;

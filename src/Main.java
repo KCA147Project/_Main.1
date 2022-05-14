@@ -108,7 +108,7 @@ public class Main {
         itemPrice[28]=76990.00;
         itemPrice[29]=599.00;
 //_____________________________________________________________________________________________________________________
-        //Array INVENTORY CLASS
+        //ARRAY INVENTORY STOCK
 
         double itemInventory[];
 
@@ -161,19 +161,18 @@ public class Main {
         NumberFormat fmt2 = NumberFormat.getPercentInstance ();
 //_____________________________________________________________________________________________________________________
 
-        //System.out.println ("-----------------------------------------------------------");
 
         //NAME (QUESTION)
         Scanner input = new Scanner(System.in);
 
-        System.out.print("\nWhat state are you from? (Abbreviate e.g. CA): ");
+       System.out.println("\nWhat state are you from? (Abbreviate e.g. CA): ");
         String value = input.nextLine();
 
         //EMPLOYEE ID
         //System.out.print ("Employee ID: ");
         //employeeId = scan.nextByte();
 
-        //HOURS WORKED
+        //SIX ITEMS
         System.out.print ("What did you PURCHASE?: ");
         num1 = scan.nextInt();
         num2 = scan.nextInt();
@@ -183,7 +182,7 @@ public class Main {
         num6 = scan.nextInt();
 
 
-        //HOURLY RATE
+        //QUANTITY
         System.out.print ("What is your QUANTITY?: ");
         numberQuantity = scan.nextByte();
 
@@ -191,6 +190,10 @@ public class Main {
         subtotal = numberPurchase * numberQuantity;
         tax = subtotal * Maryland;
         totalCost = subtotal + tax;
+
+       //String yea = tax;
+
+
 
 
 //_____________________________________________________________________________________________________________________
@@ -212,15 +215,15 @@ public class Main {
 
 
 
-        System.out.println ("AMOUNT: " + fmt1.format(numberPurchase)); //HOUR WORKED
+        System.out.println ("AMOUNT: " + fmt1.format(numberPurchase)); //AMOUNT
 
-        System.out.println ("QUANTITY: " + numberQuantity); //PAY RATE PER HOUR
+        System.out.println ("QUANTITY: " + numberQuantity); //QUANTITY
 
-        System.out.println ("Sub Total:         " + fmt1.format (subtotal)); //GROSS PAY
+        System.out.println ("Sub Total:         " + fmt1.format (subtotal)); //SUBTOTAL
 
         System.out.println ("Tax Paid:          " + fmt1.format (tax)); //TAX PAID
 
-        System.out.println ("Total:             " + fmt1.format (totalCost)); //NET PAY
+        System.out.println ("Total:             " + fmt1.format (totalCost)); //TOTAL WITH TAX CALCULATED
 
         System.out.println (line);
 
