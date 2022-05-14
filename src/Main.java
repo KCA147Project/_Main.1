@@ -74,10 +74,6 @@ public class Main {
 
         //ArrayList<String>itemPrice = new ArrayList();
         double [] itemprice = Price.itemPrice();
-//_____________________________________________________________________________________________________________________
-        //ARRAY INVENTORY STOCK
-
-        int[] inventory =  Inventory.itemInventory();
 
 
 //_____________________________________________________________________________________________________________________
@@ -151,8 +147,6 @@ public class Main {
 
         System.out.println ("AMOUNT: " + fmt1.format(numberPurchase)); //AMOUNT
 
-        System.out.println ("QUANTITY: " + numberQuantity); //QUANTITY
-
         System.out.println ("Sub Total:         " + fmt1.format (subtotal)); //SUBTOTAL
 
         System.out.println ("Tax Paid:          " + fmt1.format (tax)); //TAX PAID
@@ -164,7 +158,7 @@ public class Main {
         System.out.println(itemList.get(0) + "       " + fmt1.format(itemprice[0]));
         System.out.println(itemList.get(18) + "       " + fmt1.format(itemprice[18]));
 
-        System.out.println(itemprice[3] * inventory[3]);
+
 
 
 
