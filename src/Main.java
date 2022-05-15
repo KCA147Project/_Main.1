@@ -84,7 +84,7 @@ public class Main {
 //_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
         double Maryland = 0.06;
-        new Statetaxes();
+        new StateTaxes();
         int num1,num2,num3,num4,num5,num6;
         int item1, item2, item3, item4, item5, item6;
         double subtotal, tax, totalCost;
@@ -104,8 +104,8 @@ public class Main {
        //System.out.println("\nWhat state are you from? (Abbreviate e.g. CA): ");
         //String value = input.nextLine();
 
-        Statetaxes taxObject = new Statetaxes();
-        System.out.println(taxObject.Statetaxes());
+        StateTaxes taxObject = new StateTaxes();
+        System.out.println(taxObject.StateTaxes());
 
 
         //EMPLOYEE ID
