@@ -1,8 +1,10 @@
 import java.util.*;
-public class stateTaxes {
-    public double stateTaxes() {
+
+public class Statetaxes {
+
+    double Statetaxes() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a State Abreviation (e.g. CA): " );
+        System.out.println("Enter a State Abbreviation (e.g. CA): " );
         String stateName = input.nextLine();
         double tax = 0.00;
         switch (stateName) {
@@ -61,8 +63,10 @@ public class stateTaxes {
 
         }
         return tax;
+
     }
-}
+    }
+
 
 
 

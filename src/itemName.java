@@ -1,39 +1,106 @@
-/*
-import java.util.ArrayList;
+import java.util.*;
 
 public class itemName {
 
-    ArrayList<String> itemList = new ArrayList();
-        itemList.add("EGO 56-volt Select Cut"); //0
-        itemList.add("iPhone 13 Pro Max (1TB)"); //1
-        itemList.add("T-Rex Skull"); //2
-        itemList.add("Playstation V"); //3
-        itemList.add("TAG Heuer Monaco Calibre 11"); //4
-        itemList.add ("MacBook Pro 16-inch"); //5
-        itemList.add("Airpods Max"); //6
-        itemList.add("Samsung 65-inch 4K Smart TV"); //7
-        itemList.add("Milwaukee Brushless Combo"); //8
-        itemList.add("iPad Pro 12.9-inch (2TB)"); //9
-        itemList.add("NexiGo Webcam"); //10
-        itemList.add("Blurams Security Camera"); //11
-        itemList.add("Occer 12x25 Compact Binoculars"); //12
-        itemList.add("TOPS Opening Day Baseball Value Pack"); //13
-        itemList.add("Retro Typewriter Keyboard 7 Keys"); //14
-        itemList.add("Hydro Flask"); //15
-        itemList.add("Auking Mini Projector"); //16
-        itemList.add("Nike Tech Jacket"); //17
-        itemList.add("Yeezy Boost 350v2 Bred"); //18
-        itemList.add("Elden Ring"); //19
-        itemList.add("Comfort Carry Portable Locker Pack, 42L"); //20
-        itemList.add("AquaSonic Black Series"); //21
-        itemList.add("Crest Pro-Health"); //22
-        itemList.add("Blue Buffalo Life Protection"); //23
-        itemList.add("WEWLINE 17-inch Toolbox"); //24
-        itemList.add("BIC Xtra-Smooth Mechanical Pencils"); //25
-        itemList.add("3 Pack Chargers (AppleMFi Certified)"); //26
-        itemList.add("Amazon Basics Small Digital Alarm Clock"); //27
-        itemList.add("Tesla Model 3 Performance"); //28
-        itemList.add("Meepo V3 Electric Skateboard"); //29
+    Scanner name = new Scanner(System.in);
 
- */
+    String name;
 
+    {
+
+
+        switch (name) {
+            case "0" -> {
+                name = "Ego 56-volt Select Cut";
+            }
+            case "1" -> {
+                name = "iPhone 13 Pro Max 1TB";
+            }
+            case "2" -> {
+                name = "T-Rex Skull";
+            }
+            case "3" -> {
+                name = "Playstation 5";
+            }
+            case "4" -> {
+                name = "Tag Heur Monaco 11";
+            }
+            case "5" -> {
+                name = "Macbook Pro 16-inch";
+            }
+            case "6" -> {
+                name = "Airpods Max";
+            }
+            case "7" -> {
+                name = "Samsung 65-inch 4K Smart TV";
+            }
+            case "8" -> {
+                name = "Milwaukee Brushless Combo";
+            }
+            case "9" -> {
+                name = "iPad Pro 12.9-inch 2TB";
+            }
+            case "10" -> {
+                name = "NexiGo Webcam";
+            }
+            case "11" -> {
+                name = "Blurams";
+            }
+            case "12" -> {
+                name = "Occer 12x25 Compact Binoculars";
+            }
+            case "13" -> {
+                name = "Tops Opening Day Baseball Value Pack";
+            }
+            case "14" -> {
+                name = "Retro Typewriter Keyboard 7 Keys";
+            }
+            case "15" -> {
+                name = "Hydro Flask";
+            }
+            case "16" -> {
+                name = "Auking Mini Projector";
+            }
+            case "17" -> {
+                name = "Nike Tech Jacket";
+            }
+            case "18" -> {
+                name = "Yeezy Boost 350 v2 (bred)";
+            }
+            case "19" -> {
+                name = "Elden Ring";
+            }
+            case "20" -> {
+                name = "Comfort Carry Portable Locker Pack, 42L";
+            }
+            case "21" -> {
+                name = "AquaSonic Black Series";
+            }
+            case "22" -> {
+                name = "Crest Pro-Health";
+            }
+            case "23" -> {
+                name = "Blue Buffalo Life Protection";
+            }
+            case "24" -> {
+                name = "WEWLINE 17-Inch Tool Box";
+            }
+            case "25" -> {
+                name = "BIC Xtra-Smooth Mechanical Pencils";
+            }
+            case "26" -> {
+                name = "3 Pack (AppleMFi Certified)";
+            }
+            case "27" -> {
+                name = "Amazon Basics Small Digital Alarm Clock";
+            }
+            case "28" -> {
+                name = "Tesla Model 3 all Decked out";
+            }
+            case "29" -> {
+                name = "Meepo V3 electric Skateboard";
+            }
+
+        }
+    }
+}
