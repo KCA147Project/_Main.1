@@ -4,6 +4,9 @@ import java.util.*;
 interface taxRate{
     public String getLocation();
     public double getTax(String locationName);
+
+
+
 }
 
 public class StateTaxes implements taxRate{
@@ -124,4 +127,8 @@ public class StateTaxes implements taxRate{
         }
         return tax;
     }
-}
+
+
+    }
+
+

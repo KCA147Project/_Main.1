@@ -74,11 +74,6 @@ public class Main {
         itemList.add("Tesla Model 3 Performance"); //28
         itemList.add("Meepo V3 Electric Skateboard"); //29
 
-//_____________________________________________________________________________________________________________________
-        //ARRAY ITEM PRICE CLASS
-
-        //ArrayList<String>itemPrice = new ArrayList();
-        double [] itemprice = Price.itemPrice();
 
 
 //_____________________________________________________________________________________________________________________
@@ -105,7 +100,7 @@ public class Main {
         //String value = input.nextLine();
 
         StateTaxes taxObject = new StateTaxes();
-        System.out.println(taxObject.StateTaxes());
+
 
 
         //EMPLOYEE ID
@@ -116,10 +111,8 @@ public class Main {
         String value2 = employeeId.nextLine();
 
         //SIX ITEMS
-        System.out.println ("Select First Item: ");
-        num1 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item1 = scan.nextInt();
+        itemPrice itemObject = new itemPrice();
+        itemObject.getPrice1();
 
         System.out.println ("Select Second Item: ");
         num2 = scan.nextInt();
@@ -148,7 +141,7 @@ public class Main {
 
 
 
-        firstTotal = num1 * item1;
+        //firstTotal = num1 * item1;
         secondTotal = num2 * item2;
         thirdTotal = num3 * item3;
         fourthTotal = num4 * item4;
@@ -156,7 +149,7 @@ public class Main {
         sixthTotal = num6 * item6;
 
 
-        subtotal = (firstTotal + secondTotal + thirdTotal + fourthTotal + fifthTotal + sixthTotal);
+        subtotal = (secondTotal + thirdTotal + fourthTotal + fifthTotal + sixthTotal);
         tax = subtotal * Maryland;
         totalCost = subtotal + tax;
 
@@ -187,7 +180,7 @@ public class Main {
         System.out.println(tableHeader.get(0) + "  |  " + tableHeader.get(1) + "  |  " + tableHeader.get(2)+ "  |  " + tableHeader.get(3));
         System.out.println("====" +  "     " + "===" +  "     " + "=====" +  "     " + "=====");
 
-        System.out.println(firstTotal + "      " + item1);
+        System.out.println(itemObject); //Im trying to get Line 116 from itemPrice to post here
         System.out.println(secondTotal + "  " + item2);
         System.out.println(thirdTotal + "  " + item3);
         System.out.println(fourthTotal + "  " + item4);
@@ -208,8 +201,7 @@ public class Main {
 
         System.out.println (line);
 
-        System.out.println(itemList.get(0) + "       " + fmt1.format(itemprice[0]));
-        System.out.println(itemList.get(18) + "       " + fmt1.format(itemprice[18]));
+
 
 
 
